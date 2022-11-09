@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SelectionView: View {
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var birthdays: FetchedResults<Birthday>
+    @FetchRequest(sortDescriptors: []) var friends: FetchedResults<Friend>
     var body: some View {
         NavigationStack {
             VStack {

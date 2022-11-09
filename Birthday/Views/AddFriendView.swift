@@ -24,6 +24,11 @@ struct AddFriendView: View {
                     DatePicker("Birthday:", selection: $birthdayDate, displayedComponents: .date)
                     
                 }
+                Section {
+                    Button("Save") {
+                        let newFriend = Friend(context: moc)
+                    }
+                }
                 
             }
             .navigationTitle("Add Friend")
