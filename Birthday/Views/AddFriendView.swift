@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddFriendView: View {
     @Environment(\.managedObjectContext) var moc
+    @Environment(\.dismiss) var dismiss
     
     @State private var name: String = ""
     @State private var birthdayDate = Date()
@@ -22,11 +23,18 @@ struct AddFriendView: View {
                 
                 Section {
                     DatePicker("Birthday:", selection: $birthdayDate, displayedComponents: .date)
+                        .labelsHidden()
                     
                 }
                 Section {
                     Button("Save") {
                         let newFriend = Friend(context: moc)
+                        newFriend.id = UUID()
+                        newFriend.name = name
+                        newFriend.birthday = birthdayDate
+                        
+                        try? moc.save()
+                        dismiss()
                     }
                 }
                 
