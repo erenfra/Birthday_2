@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243DADF9291B3CD10038252C /* BirthdayData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 243DADF7291B3CD00038252C /* BirthdayData.xcdatamodeld */; };
+		244051BF291B41D50017448D /* AddFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244051BE291B41D50017448D /* AddFriendView.swift */; };
+		244051C1291B41F80017448D /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244051C0291B41F80017448D /* SelectionView.swift */; };
+		244051C3291B42630017448D /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244051C2291B42630017448D /* PersonView.swift */; };
+		244051C5291B67290017448D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244051C4291B67290017448D /* DataController.swift */; };
 		24FF15A9289E18A700D38EFF /* BirthdayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF15A8289E18A700D38EFF /* BirthdayApp.swift */; };
 		24FF15AB289E18A700D38EFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF15AA289E18A700D38EFF /* ContentView.swift */; };
 		24FF15AD289E18AE00D38EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FF15AC289E18AE00D38EFF /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		243DADF8291B3CD00038252C /* BirthdayData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BirthdayData.xcdatamodel; sourceTree = "<group>"; };
+		244051BE291B41D50017448D /* AddFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendView.swift; sourceTree = "<group>"; };
+		244051C0291B41F80017448D /* SelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
+		244051C2291B42630017448D /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		244051C4291B67290017448D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		24FF15A5289E18A700D38EFF /* Birthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24FF15A8289E18A700D38EFF /* BirthdayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayApp.swift; sourceTree = "<group>"; };
 		24FF15AA289E18A700D38EFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +42,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		243DADFA291B3EDD0038252C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		243DADFB291B3EF10038252C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24FF15AA289E18A700D38EFF /* ContentView.swift */,
+				244051BE291B41D50017448D /* AddFriendView.swift */,
+				244051C0291B41F80017448D /* SelectionView.swift */,
+				244051C2291B42630017448D /* PersonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		244051C6291B67310017448D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				243DADF7291B3CD00038252C /* BirthdayData.xcdatamodeld */,
+				244051C4291B67290017448D /* DataController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		24FF159C289E18A700D38EFF = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +88,10 @@
 		24FF15A7289E18A700D38EFF /* Birthday */ = {
 			isa = PBXGroup;
 			children = (
+				244051C6291B67310017448D /* Model */,
+				243DADFB291B3EF10038252C /* Views */,
+				243DADFA291B3EDD0038252C /* Components */,
 				24FF15A8289E18A700D38EFF /* BirthdayApp.swift */,
-				24FF15AA289E18A700D38EFF /* ContentView.swift */,
 				24FF15AC289E18AE00D38EFF /* Assets.xcassets */,
 				24FF15AE289E18AE00D38EFF /* Preview Content */,
 			);
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244051C5291B67290017448D /* DataController.swift in Sources */,
+				244051BF291B41D50017448D /* AddFriendView.swift in Sources */,
 				24FF15AB289E18A700D38EFF /* ContentView.swift in Sources */,
 				24FF15A9289E18A700D38EFF /* BirthdayApp.swift in Sources */,
+				244051C3291B42630017448D /* PersonView.swift in Sources */,
+				243DADF9291B3CD10038252C /* BirthdayData.xcdatamodeld in Sources */,
+				244051C1291B41F80017448D /* SelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +383,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		243DADF7291B3CD00038252C /* BirthdayData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				243DADF8291B3CD00038252C /* BirthdayData.xcdatamodel */,
+			);
+			currentVersion = 243DADF8291B3CD00038252C /* BirthdayData.xcdatamodel */;
+			path = BirthdayData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 24FF159D289E18A700D38EFF /* Project object */;
 }
