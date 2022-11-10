@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var friends: FetchedResults<Friend>
+    //@Environment(\.managedObjectContext) var moc
+    //@FetchRequest(sortDescriptors: []) var friends: FetchedResults<Friend>
     
     @State private var showingAddFriendScreen = false
     
@@ -17,22 +17,46 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 Image("Top_Image")
-                    .padding()
-                Spacer()
-                Text("Count: \(friends.count)")
-                    .toolbar{
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            Button {
-                                showingAddFriendScreen.toggle()
-                            } label: {
-                                Label("Add Friend", systemImage: "plus")
-                            }
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                
+                ZStack {
+                    Rectangle()
+                        .frame(width: 160, height: 40)
+                        .cornerRadius(25)
+                        .foregroundColor(.blue)
+                        
+                    Text("Add New Friend")
+                        .font(.body.bold())
+                        .foregroundColor(.white)
+                }
+                
+                Grid(horizontalSpacing: 20,verticalSpacing: 20){
+                    GridRow {
+                        NavigationLink(destination: SelectionView(), isActive: $showingAddFriendScreen) {
+                            Button(action: {showingAddFriendScreen=true}, label: { MonthBlock(monthBox: "Jan") })
                         }
+                       MonthBlock(monthBox: "Feb")
+                       MonthBlock(monthBox: "Mar")
                     }
-                    .sheet(isPresented: $showingAddFriendScreen) {
-                        AddFriendView()
+                    GridRow {
+                        MonthBlock(monthBox: "Apr")
+                        MonthBlock(monthBox: "May")
+                        MonthBlock(monthBox: "Jun")
                     }
-                Spacer()
+                    GridRow {
+                        MonthBlock(monthBox: "Jul")
+                        MonthBlock(monthBox: "Aug")
+                        MonthBlock(monthBox: "Sep")
+                    }
+                    GridRow {
+                        MonthBlock(monthBox: "Oct")
+                        MonthBlock(monthBox: "Nov")
+                        MonthBlock(monthBox: "Dec")
+                    }
+                }.padding()
+          
+                
                 
             }
 
