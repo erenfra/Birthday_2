@@ -11,14 +11,25 @@ struct MonthBlock: View {
     @State var monthBox: String
     let colors = ["CstLightYellow","CstLightPurple","CstLightGreen","CstLightBlue"]
     var body: some View {
-        ZStack {
-            Rectangle()
-                .frame(width: .infinity, height: .infinity)
-                .cornerRadius(10)
-                .foregroundColor(Color(colors.randomElement() ?? "CstLightPurple"))
-            Text(monthBox)
-                .font(.largeTitle.bold())
-                .foregroundColor(.black)
+        ZStack(alignment: .topTrailing) {
+            ZStack {
+                Rectangle()
+                    //.frame(maxWidth: 100, maxHeight: 100)
+                    .cornerRadius(20)
+                    .foregroundColor(Color(colors.randomElement() ?? "CstLightPurple"))
+                    //.shadow(color: .black, radius: 5, x: 0, y: 3)
+                Text(monthBox)
+                    .font(.largeTitle.bold())
+                    .foregroundColor(.black)
+                    
+            }
+            
+            Text("99")
+                .font(.caption)
+                .padding(5)
+                .foregroundColor(.white)
+                .background(.red)
+                .cornerRadius(50)
         }
     }
 }

@@ -23,7 +23,7 @@ struct SelectionView: View {
                         .foregroundColor(/*@START_MENU_TOKEN@*/Color("CstLightPurple")/*@END_MENU_TOKEN@*/)
                         
                     Text("November")
-                        .font(.largeTitle)
+                        .font(.body.bold())
                 }
                 List {
                     ForEach(friends) { friend in
@@ -34,11 +34,13 @@ struct SelectionView: View {
                         }
                     }
                 }
+                
         
             }
             
         }
     }
+        
 }
 
 struct SelectionView_Previews: PreviewProvider {
