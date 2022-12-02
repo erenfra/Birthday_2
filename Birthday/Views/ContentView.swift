@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    //@Environment(\.managedObjectContext) var moc
-    //@FetchRequest(sortDescriptors: []) var friends: FetchedResults<Friend>
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var friends: FetchedResults<Friend>
     
     @State private var showingAddFriendScreen = false
     
@@ -19,20 +19,14 @@ struct ContentView: View {
                 Image("Top_Image")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-
+                   
+                Button(action: {
+                    AddFriendView()
+                }, label: {
+                    CapsuleButton(buttonTitle: "Add a new friend")
+                }).padding()
+                        
                 
-                ZStack {
-                    Rectangle()
-                        .frame(width: 160, height: 40)
-                        .cornerRadius(25)
-                        .foregroundColor(.blue)
-                        .shadow(color: .black, radius: 5, x: 0, y: 3)
-                        
-                    Text("Add New Friend")
-                        .font(.body.bold())
-                        .foregroundColor(.white)
-                        
-                }
                 
                 Grid(horizontalSpacing: 20,verticalSpacing: 20){
                     GridRow {

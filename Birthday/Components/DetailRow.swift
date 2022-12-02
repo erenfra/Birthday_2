@@ -16,7 +16,7 @@ struct DetailRow: View {
     
     var body: some View {
         
-        HStack {
+        HStack(spacing: 10) {
             VStack(alignment: .leading, spacing: 7) {
                 Text(name)
                     .font(.body)
@@ -27,20 +27,24 @@ struct DetailRow: View {
                     .foregroundColor(.gray)
                     .padding(.horizontal)
             }
-            Spacer()
             ZStack {
-                Circle()
-                    
-                    .frame(width: 40)
-                    .foregroundColor(.mint)
-                    
                     
                 Text(day)
                     .font(.title2.bold())
+                    .padding(10)
                     .foregroundColor(.white)
+                    .background(Color.accentColor)
+                    .cornerRadius(50)
             }
                 
         }
+        .frame(width: .infinity)
+        .padding()
+        //.padding(.horizontal, 10)
+        .background(.ultraThinMaterial)
+        .cornerRadius(100)
+
+        
     }
 }
 

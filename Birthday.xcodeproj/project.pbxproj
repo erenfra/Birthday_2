@@ -16,6 +16,8 @@
 		244051CA291CB2EB0017448D /* MonthBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244051C9291CB2EB0017448D /* MonthBlock.swift */; };
 		24A7CC682930871C0083E38E /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A7CC672930871C0083E38E /* TileView.swift */; };
 		24A7CC6A2935D5850083E38E /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A7CC692935D5850083E38E /* ProductCard.swift */; };
+		24A7CC6C2935DDFC0083E38E /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A7CC6B2935DDFC0083E38E /* CapsuleButton.swift */; };
+		24A7CC6E2935E2A40083E38E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A7CC6D2935E2A40083E38E /* RoundButton.swift */; };
 		24FF15A9289E18A700D38EFF /* BirthdayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF15A8289E18A700D38EFF /* BirthdayApp.swift */; };
 		24FF15AB289E18A700D38EFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF15AA289E18A700D38EFF /* ContentView.swift */; };
 		24FF15AD289E18AE00D38EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FF15AC289E18AE00D38EFF /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 		244051C9291CB2EB0017448D /* MonthBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthBlock.swift; sourceTree = "<group>"; };
 		24A7CC672930871C0083E38E /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		24A7CC692935D5850083E38E /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		24A7CC6B2935DDFC0083E38E /* CapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
+		24A7CC6D2935E2A40083E38E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		24FF15A5289E18A700D38EFF /* Birthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24FF15A8289E18A700D38EFF /* BirthdayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayApp.swift; sourceTree = "<group>"; };
 		24FF15AA289E18A700D38EFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 				244051C7291C97380017448D /* DetailRow.swift */,
 				244051C9291CB2EB0017448D /* MonthBlock.swift */,
 				24A7CC692935D5850083E38E /* ProductCard.swift */,
+				24A7CC6B2935DDFC0083E38E /* CapsuleButton.swift */,
+				24A7CC6D2935E2A40083E38E /* RoundButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -194,7 +200,9 @@
 				244051CA291CB2EB0017448D /* MonthBlock.swift in Sources */,
 				24FF15AB289E18A700D38EFF /* ContentView.swift in Sources */,
 				24FF15A9289E18A700D38EFF /* BirthdayApp.swift in Sources */,
+				24A7CC6E2935E2A40083E38E /* RoundButton.swift in Sources */,
 				244051C3291B42630017448D /* PersonView.swift in Sources */,
+				24A7CC6C2935DDFC0083E38E /* CapsuleButton.swift in Sources */,
 				243DADF9291B3CD10038252C /* BirthdayData.xcdatamodeld in Sources */,
 				24A7CC682930871C0083E38E /* TileView.swift in Sources */,
 				244051C1291B41F80017448D /* SelectionView.swift in Sources */,
