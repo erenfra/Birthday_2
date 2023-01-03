@@ -34,7 +34,7 @@ struct ContentView: View {
                             Button(action: {showingAddFriendScreen.toggle()}, label: { MonthBlock(monthBox: "Jan") })
                         }
                         MonthBlock(monthBox: "Feb")
-                        MonthBlock(monthBox: "Mar")
+                        MonthBlock(monthBox: "Marco")
                     }
                     GridRow {
                         MonthBlock(monthBox: "Apr")
